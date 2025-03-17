@@ -49,6 +49,7 @@ function broadcastNewSubmission() { // Function to send message to all WebSocket
 
 
 // POST endpoint to accept form submissions
+console.log("Checking API Key:", process.env.GOOGLE_AI_API_KEY);
 app.post('/submissions', async (req, res) => {
     console.log('Received submission:', req.body);
     try {
